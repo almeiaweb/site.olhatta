@@ -390,6 +390,18 @@ img{-webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none}
 /* barra fina de vidro, sem faixa escura descendo */
 .topo.rolou,body.com-pagina .topo{background:rgba(21,19,15,.42);-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);padding-top:12px;padding-bottom:12px}
 .topo{transition:background-color .35s ease,padding .35s ease}
+/* menu premium: só texto, sem bordas */
+.topo nav{gap:clamp(18px,2.4vw,34px)}
+.topo nav a{font-size:.6rem;letter-spacing:.2em;padding:6px 0;border:0;border-radius:0;background:none!important;color:rgba(243,237,227,.62);transition:color .25s ease}
+.topo nav a.ativo{color:var(--creme)}
+@media (hover:hover) and (pointer:fine){.topo nav a:not(.ativo):hover{color:var(--creme)}}
+.pilula{gap:8px;font-size:.6rem;letter-spacing:.2em;padding:6px 0;border:0;border-radius:0;color:var(--creme)}
+.pilula::before{display:none}
+.pilula i{width:14px;height:14px;border-radius:0;background:none!important;color:inherit!important}
+.pilula i svg{width:14px;height:14px}
+@media (hover:hover) and (pointer:fine){.pilula:hover{color:var(--mel)}.topo.sobre-claro .pilula:hover{color:var(--mel)}}
+@media (max-width:900px){.pilula span{display:inline}.pilula{padding:6px 0}}
+.pg-voltar{border:0!important;background:none!important;padding:6px 0;font-size:.6rem;letter-spacing:.2em;gap:8px}
 </style>
 </head>
 <body>
