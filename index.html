@@ -513,6 +513,17 @@ body.com-pagina .topo.rolou{background:rgba(21,19,15,.86);-webkit-backdrop-filte
   .pac-titulo{top:15svh}
   .pac-pista{top:60%;padding-left:calc(50vw - 32vw)}
 }
+/* respiro entre o Sobre e os serviços */
+.serv-trilha{box-sizing:border-box;padding-top:clamp(70px,13vh,150px);height:calc(100svh + clamp(70px,13vh,150px))!important}
+@media (max-width:900px){.serv-trilha{height:auto!important;padding-top:56px}}
+/* foto da Dra. no Sobre se desfaz no fundo */
+.sobre-foto-caixa{-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 30%),linear-gradient(0deg,transparent 0%,#000 26%),linear-gradient(180deg,transparent 0%,#000 14%);-webkit-mask-composite:source-in,source-in;mask-image:linear-gradient(90deg,transparent 0%,#000 30%),linear-gradient(0deg,transparent 0%,#000 26%),linear-gradient(180deg,transparent 0%,#000 14%);mask-composite:intersect}
+@media (max-width:900px){
+  .sobre-foto-caixa{-webkit-mask-image:linear-gradient(0deg,transparent 0%,#000 34%),linear-gradient(180deg,transparent 0%,#000 12%);-webkit-mask-composite:source-in;mask-image:linear-gradient(0deg,transparent 0%,#000 34%),linear-gradient(180deg,transparent 0%,#000 12%);mask-composite:intersect}
+}
+/* menos espaço em cima do AGENDE no PC */
+@media (min-width:901px){.final{--h:calc(var(--bh) * .92 + var(--fs) * .5 + 90px);min-height:0}}
+.avaliacoes{padding-bottom:clamp(30px,5vh,60px)}
 </style>
 </head>
 <body>
