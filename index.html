@@ -387,6 +387,9 @@ img{-webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none}
 /* serviços: rolagem mais calma */
 .pg-3d{height:calc(var(--n) * 90vh + 100vh)}
 .serv-foto{will-change:opacity,transform}
+/* barra fina de vidro, sem faixa escura descendo */
+.topo.rolou,body.com-pagina .topo{background:rgba(21,19,15,.42);-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);padding-top:12px;padding-bottom:12px}
+.topo{transition:background-color .35s ease,padding .35s ease}
 </style>
 </head>
 <body>
